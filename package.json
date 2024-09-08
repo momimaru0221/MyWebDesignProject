@@ -12,6 +12,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "gsap": "npm:@gsap/business@^3.12.5"
-  }
+  "gsap": "^3.12.5"
+}
 }

@@ -3,23 +3,15 @@ import { MotionPathPlugin, ScrollTrigger, MorphSVGPlugin } from "gsap/all";
 
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger, MorphSVGPlugin);
 
-// Box1のアニメーション - ScrollTriggerを使用
-gsap.to("#box1", {
-  x: 300,
-  rotation: 360,
-  duration: 3,
-  scrollTrigger: {
-    trigger: "#box1",
-    start: "top center",
-    end: "bottom center",
-    scrub: true
-  }
+beforeEach(() => {
+  document.body.innerHTML = `
+    <svg>
+      <circle cx="50" cy="50" r="50"></circle>
+    </svg>
+  `;
 });
 
-// Box2のアニメーション - MorphSVGPluginを使用
-gsap.to("#box2", {
-  morphSVG: {
-    d: "M150 0 L75 200 L225 200 Z"  // 三角形に変形
-  },
-  duration: 3
+test('GSAP should be defined', async () => {
+  expect(gsap).toBeDefined();
+  await gsap.to("circle", { duration: 1, x: 100 });  // 簡単なアニメーションテスト
 });

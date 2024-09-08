@@ -6,5 +6,8 @@ module.exports = {
   ],
   transform: {
   "^.+\\.js$": "babel-jest"  // Babelを使用してJSファイルをトランスパイル
+  },
+  moduleNameMapper: {
+    "^@gsap/business$": "<rootDir>/node_modules/gsap"
   }
 };
