@@ -1,10 +1,13 @@
 {
   "devDependencies": {
     "jest": "^29.7.0",
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.0"
   },
   "scripts": {
     "start": "live-server src",
     "test": "jest"
+  },
+  "dependencies": {
+    "gsap": "npm:@gsap/business@^3.12.5"
   }
 }
