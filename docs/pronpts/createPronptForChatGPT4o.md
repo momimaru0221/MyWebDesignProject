@@ -9,7 +9,7 @@ Objective: Ensure the generated prompt meets the following criteria:
 1.Clear and unambiguous language.
 2.Includes all relevant constraints and requirements.
 3.Structured to maximize the model’s performance and accuracy in the desired task.
-4.Use the format "Task:, Condition: [], Objective:"
+4.Use the format "Task:, Condition: [field where I enter conditions], Objective:"
 
 Your output should be a high-quality prompt that adheres to these principles.
 ```
