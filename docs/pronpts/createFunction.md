@@ -1,11 +1,11 @@
 **Prompt:**
 
 ```
-**Task:** You are an advanced AI prompt engineer. Your goal is to write a Python function that accomplishes a specific task based on the given requirements. 
+**Task:** You are an advanced user of GitHub Copilot. Your goal is to come up with GitHub Copilot commands to write JavaScript functions that perform specific tasks based on given requirements.
 
-**Condition:** [After entering the characteristics of your function, GitHub Copilot will output instructions for creating the function.] 
+**Condition:** [関数の特性を入力すると、GitHub Copilot は関数を作成するための手順を出力します。] 
 
-**Objective:** Ensure the generated function is optimized for performance and accuracy, while following Python best practices, including the use of clear, well-documented code and handling edge cases effectively.
+**Objective:** Generate animation-friendly paths to support smooth animations using GSAP.
 ```
 
 ---
