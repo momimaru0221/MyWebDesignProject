@@ -1,0 +1,41 @@
+/* 基本のボディスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* 見出しスタイル */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+}
+
+/* ボタンスタイル */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ボタンホバー時のスタイル */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* フッタースタイル */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
