@@ -46,27 +46,33 @@ npm install
 
 ```
 .
-├── README.md             # プロジェクト概要とドキュメント
-├── docs                  # ドキュメントやアイデアの記録
-│   ├── WORKFLOW.md       # 開発ワークフロー
-│   ├── functions.md      # 関数の説明
-│   └── ideas             # アイデアをまとめたディレクトリ
-│       └── mac_common_terminal_commands.md
-├── eval "$(ssh-agent -s)"   # SSHエージェントスクリプト
-├── eval "$(ssh-agent -s)".pub # 公開鍵
-├── organize_project.sh   # プロジェクト整理スクリプト
-├── package-lock.json     # パッケージの依存関係
-├── package.json          # プロジェクトの設定ファイル
-├── src                   # ソースコード
-│   ├── css               # CSSスタイル
-│   │   └── style.css
-│   ├── html              # HTMLファイル
-│   │   └── index.html
-│   └── js                # JavaScriptファイル
-│       └── main.js
-└── tests                 # テスト関連ファイル
-    └── unit-tests        # 単体テスト
+├── README.md
+├── docs
+│   ├── WORKFLOW.md
+│   ├── daily-memos
+│   │   └── 20240908.md
+│   ├── functions
+│   │   └── functions.md
+│   └── ideas
+│       └── mac_common_terminal_commands.md
+├── eval "$(ssh-agent -s)"
+├── eval "$(ssh-agent -s)".pub
+├── organize_project.sh
+├── package-lock.json
+├── package.json
+├── src
+│   ├── css
+│   │   └── style.css
+│   ├── html
+│   │   └── index.html
+│   └── js
+│       └── main.js
+└── tests
+    └── examples
+        ├── example.test.css
+        ├── example.test.html
         └── example.test.js
+        
 ```
 
 ## テスト
