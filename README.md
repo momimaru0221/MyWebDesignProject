@@ -47,38 +47,31 @@ npm install
 ```
 .
 ├── README.md             # プロジェクト概要とドキュメント
-├── assets                # アセット（画像やフォントなど）
-│   ├── fonts
-│   ├── icons
-│   └── images
-├── config                # 設定ファイル
 ├── docs                  # ドキュメントやアイデアの記録
-│   ├── functions.md
-│   └── ideas.md
+│   ├── WORKFLOW.md       # 開発ワークフロー
+│   ├── functions.md      # 関数の説明
+│   └── ideas             # アイデアをまとめたディレクトリ
+│       └── mac_common_terminal_commands.md
+├── eval "$(ssh-agent -s)"   # SSHエージェントスクリプト
+├── eval "$(ssh-agent -s)".pub # 公開鍵
 ├── organize_project.sh   # プロジェクト整理スクリプト
 ├── package-lock.json     # パッケージの依存関係
 ├── package.json          # プロジェクトの設定ファイル
 ├── src                   # ソースコード
-│   ├── components        # 再利用可能なコンポーネント
-│   │   └── common
 │   ├── css               # CSSスタイル
 │   │   └── style.css
 │   ├── html              # HTMLファイル
 │   │   └── index.html
 │   └── js                # JavaScriptファイル
-│       ├── components
-│       ├── main.js
-│       ├── modules
-│       └── utils
+│       └── main.js
 └── tests                 # テスト関連ファイル
-    ├── examples
-    ├── integration
-    └── unit-tests
+    └── unit-tests        # 単体テスト
+        └── example.test.js
 ```
 
 ## テスト
 
-このプロジェクトでは、テストフレームワークとして[Jest](https://jestjs.io/)を使用しています。単体テストと統合テストを行い、機能が意図通りに動作するか確認します。
+このプロジェクトでは、テストフレームワークとして[Jest](https://jestjs.io/)を使用しています。単体テストを行い、機能が意図通りに動作するか確認します。
 
 **テストの実行方法:**
 
