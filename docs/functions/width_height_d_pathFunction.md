@@ -1,4 +1,4 @@
-# Animation Function Ideas
+# Animation Function
 
 ## 概要
 この関数は、アニメーションのために `width` と `height` を入力として受け取り、SVGの `d` 属性の値を返すものです。GSAPのプラグインを活用し、アニメーションの効率的な実装を目指します。
