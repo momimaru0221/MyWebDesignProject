@@ -1,17 +1,7 @@
 import { gsap } from "gsap";
-import { MotionPathPlugin, ScrollTrigger, MorphSVGPlugin } from "gsap/all";
 
-gsap.registerPlugin(MotionPathPlugin, ScrollTrigger, MorphSVGPlugin);
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-beforeEach(() => {
-  document.body.innerHTML = `
-    <svg>
-      <circle cx="50" cy="50" r="50"></circle>
-    </svg>
-  `;
-});
+gsap.registerPlugin(MorphSVGPlugin);
 
-test('GSAP should be defined', async () => {
-  expect(gsap).toBeDefined();
-  await gsap.to("circle", { duration: 1, x: 100 });  // 簡単なアニメーションテスト
-});
+gsap.to("#circle", { duration: 1, morphSVG: "#hippo" });

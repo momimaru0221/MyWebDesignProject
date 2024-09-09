@@ -1,13 +1,8 @@
 module.exports = {
   testEnvironment: "jsdom",
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
-  transformIgnorePatterns: [
-  "/node_modules/(?!(gsap)/)"  // gsapモジュールをトランスパイル対象に含める
-  ],
+  transformIgnorePatterns: ["/node_modules/(?!(gsap)/)"],
   transform: {
-  "^.+\\.js$": "babel-jest"  // Babelを使用してJSファイルをトランスパイル
-  },
-  moduleNameMapper: {
-    "^@gsap/business$": "<rootDir>/node_modules/gsap"
+    "^.+\\.js$": "babel-jest"
   }
 };
