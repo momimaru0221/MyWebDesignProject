@@ -46,74 +46,73 @@ npm install
 
 ```
 project-root/
-├── README.md
-├── assets/
-├── babel.config.js
-├── config/
-├── docs/
-│   ├── WORKFLOW.md
-│   ├── daily-memos/
-│   │   └── 20240908.md
-│   ├── functions/
-│   │   └── generate_dynamic_svg_path.md
-│   ├── ideas/
-│   │   ├── commands.md
-│   │   └── plugin.md
-│   └── pronpts/
-│       ├── addJapaneseJavaScript.md
-│       ├── analyzeProgramPrompt.md
-│       ├── createFunctionPrompt.md
-│       ├── createPronptForChatGPT4o.md
-│       └── generateFilesAndCode.md
-├── jest.config.js
-├── jest.setup.js
-├── organize_project.sh
-├── package-lock.json
-├── package.json
-├── src/
-│   ├── css/
-│   │   └── style.css
-│   ├── html/
-│   │   └── index.html
-│   └── js/
-│       ├── gsap-plugins.js
-│       ├── main.js
-│       └── utils/
-│           └── generateSVGPath.js
-├── tests/
-│   └── unit-tests/
-│       ├── example/
-│       │   ├── example.test.css
-│       │   ├── example.test.html
-│       │   └── example.test.js
-│       ├── gsapPlugins/
-│       │   ├── index.test.html
-│       │   ├── script.test.js
-│       │   └── styles.test.css
-│       └── morphSVG/
-│           ├── index.test.html
-│           ├── script.test.js
-│           └── styles.test.css
-└── node_modules/
-    └── gsap/
-        └── dist/
-            ├── CSSRulePlugin.js
-            ├── CustomBounce.js
-            ├── CustomEase.js
-            ├── Draggable.js
-            ├── DrawSVGPlugin.js
-            ├── EasePack.js
-            ├── MorphSVGPlugin.js
-            ├── MotionPathHelper.js
-            ├── MotionPathPlugin.js
-            ├── Observer.js
-            ├── Physics2DPlugin.js
-            ├── ScrollSmoother.js
-            ├── ScrollTrigger.js
-            ├── SplitText.js
-            ├── TextPlugin.js
-            └── gsap.js
-        
+├── README.md               # プロジェクトの概要やセットアップ手順が記載されたファイル
+├── assets/                 # プロジェクトで使用する画像やフォント、その他メディアファイルを格納
+├── babel.config.js         # Babelの設定ファイル。JavaScriptのコンパイルに関する設定
+├── config/                 # プロジェクトの各種設定ファイルを格納
+├── docs/                   # プロジェクトに関連するドキュメントを保存するフォルダ
+│   ├── WORKFLOW.md             # ワークフローに関する説明が記載されたドキュメント
+│   ├── daily-memos/            # 日々のメモや進捗に関するドキュメントを保存
+│   │   └── 20240908.md             # 2024年9月8日のメモ
+│   ├── functions/             # 関数や機能の仕様や実装に関するドキュメント
+│   │   └── generate_dynamic_svg_path.md  # 動的なSVGパスを生成する関数に関するドキュメント
+│   ├── ideas/                 # アイデアや設計に関するドキュメントを保存
+│   │   ├── commands.md            # コマンドに関するアイデアや設計
+│   │   └── plugin.md              # プラグインに関するアイデアや設計
+│   └── prompts/               # ChatGPT用のプロンプトを保存
+│       ├── addJapaneseJavaScript.md    # 日本語を含むJavaScript関連のプロンプト
+│       ├── analyzeProgramPrompt.md     # プログラムを分析するプロンプト
+│       ├── createFunctionPrompt.md     # 関数作成のプロンプト
+│       ├── createPromptForChatGPT4.md  # ChatGPT 4.0用プロンプト
+│       └── generateFilesAndCode.md     # ファイルやコードを生成するためのプロンプト
+├── jest.config.js           # Jestの設定ファイル。ユニットテストに関する設定
+├── jest.setup.js            # Jestのセットアップファイル
+├── organize_project.sh      # プロジェクトのフォルダやファイルを整理するためのシェルスクリプト
+├── package-lock.json        # npmの依存関係を記録するファイル
+├── package.json             # npmの依存関係とスクリプトを定義するファイル
+├── src/                     # ソースコードを保存するフォルダ
+│   ├── css/                     # CSSファイルを格納
+│   │   └── style.css                # プロジェクトのスタイルシート
+│   ├── html/                    # HTMLファイルを格納
+│   │   └── index.html               # プロジェクトのメインHTMLファイル
+│   └── js/                      # JavaScriptファイルを格納
+│       ├── gsap-plugins.js          # GSAPプラグインに関するJavaScriptファイル
+│       ├── main.js                  # メインのJavaScriptファイル
+│       └── utils/                   # ユーティリティ関数を格納
+│           └── generateSVGPath.js       # SVGパスを生成する関数
+├── tests/                   # テストに関するファイルを保存するフォルダ
+│   └── unit-tests/              # ユニットテストファイルを格納
+│       ├── example/                # テストの例
+│       │   ├── example.test.css        # CSSファイルのテスト
+│       │   ├── example.test.html       # HTMLファイルのテスト
+│       │   └── example.test.js         # JavaScriptファイルのテスト
+│       ├── gsapPlugins/            # GSAPプラグインに関するテストファイルを保存
+│       │   ├── index.test.html         # GSAPプラグインのHTMLテスト
+│       │   ├── script.test.js          # GSAPプラグインのJavaScriptテスト
+│       │   └── styles.test.css         # GSAPプラグインのCSSテスト
+│       └── morphSVG/               # MorphSVGプラグインに関するテストファイルを保存
+│           ├── index.test.html         # MorphSVGのHTMLテスト
+│           ├── script.test.js          # MorphSVGのJavaScriptテスト
+│           └── styles.test.css         # MorphSVGのCSSテスト
+└── node_modules/             # npmでインストールされた依存パッケージを格納
+    └── gsap/                 # GSAP関連のファイルを保存
+        └── dist/                 # GSAPプラグインのディストリビュートファイル
+            ├── CSSRulePlugin.js      # CSSルールプラグイン
+            ├── CustomBounce.js       # カスタムバウンスアニメーションプラグイン
+            ├── CustomEase.js         # カスタムイージングプラグイン
+            ├── Draggable.js          # ドラッグ可能な要素を作成するプラグイン
+            ├── DrawSVGPlugin.js      # SVG描画アニメーションプラグイン
+            ├── EasePack.js           # イージング効果をまとめたプラグインパック
+            ├── MorphSVGPlugin.js     # SVGパスの変形アニメーションプラグイン
+            ├── MotionPathHelper.js   # モーションパスの補助ツール
+            ├── MotionPathPlugin.js   # オブジェクトをパスに沿って移動させるプラグイン
+            ├── Observer.js           # ユーザーインタラクションを監視するプラグイン
+            ├── Physics2DPlugin.js    # 2D物理エンジンを使用したアニメーションプラグイン
+            ├── ScrollSmoother.js     # スムーズなスクロール効果を実現するプラグイン
+            ├── ScrollTrigger.js      # スクロール位置に基づいたアニメーションを制御するプラグイン
+            ├── SplitText.js          # テキストを分割し、各文字ごとにアニメーションを付けるプラグイン
+            ├── TextPlugin.js         # テキストにアニメーションを付けるためのプラグイン
+            └── gsap.js               # GSAPのメインライブラリ        
 ```
 
 ## テスト
