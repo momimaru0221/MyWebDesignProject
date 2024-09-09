@@ -45,33 +45,74 @@ npm install
 ## プロジェクト構造
 
 ```
-.
+project-root/
 ├── README.md
-├── docs
-│   ├── WORKFLOW.md
-│   ├── daily-memos
-│   │   └── 20240908.md
-│   ├── functions
-│   │   └── functions.md
-│   └── ideas
-│       └── mac_common_terminal_commands.md
-├── eval "$(ssh-agent -s)"
-├── eval "$(ssh-agent -s)".pub
+├── assets/
+├── babel.config.js
+├── config/
+├── docs/
+│   ├── WORKFLOW.md
+│   ├── daily-memos/
+│   │   └── 20240908.md
+│   ├── functions/
+│   │   └── generate_dynamic_svg_path.md
+│   ├── ideas/
+│   │   ├── commands.md
+│   │   └── plugin.md
+│   └── pronpts/
+│       ├── addJapaneseJavaScript.md
+│       ├── analyzeProgramPrompt.md
+│       ├── createFunctionPrompt.md
+│       ├── createPronptForChatGPT4o.md
+│       └── generateFilesAndCode.md
+├── jest.config.js
+├── jest.setup.js
 ├── organize_project.sh
 ├── package-lock.json
 ├── package.json
-├── src
-│   ├── css
-│   │   └── style.css
-│   ├── html
-│   │   └── index.html
-│   └── js
-│       └── main.js
-└── tests
-    └── examples
-        ├── example.test.css
-        ├── example.test.html
-        └── example.test.js
+├── src/
+│   ├── css/
+│   │   └── style.css
+│   ├── html/
+│   │   └── index.html
+│   └── js/
+│       ├── gsap-plugins.js
+│       ├── main.js
+│       └── utils/
+│           └── generateSVGPath.js
+├── tests/
+│   └── unit-tests/
+│       ├── example/
+│       │   ├── example.test.css
+│       │   ├── example.test.html
+│       │   └── example.test.js
+│       ├── gsapPlugins/
+│       │   ├── index.test.html
+│       │   ├── script.test.js
+│       │   └── styles.test.css
+│       └── morphSVG/
+│           ├── index.test.html
+│           ├── script.test.js
+│           └── styles.test.css
+└── node_modules/
+    └── gsap/
+        └── dist/
+            ├── CSSRulePlugin.js
+            ├── CustomBounce.js
+            ├── CustomEase.js
+            ├── Draggable.js
+            ├── DrawSVGPlugin.js
+            ├── EasePack.js
+            ├── MorphSVGPlugin.js
+            ├── MotionPathHelper.js
+            ├── MotionPathPlugin.js
+            ├── Observer.js
+            ├── Physics2DPlugin.js
+            ├── ScrollSmoother.js
+            ├── ScrollTrigger.js
+            ├── SplitText.js
+            ├── TextPlugin.js
+            └── gsap.js
         
 ```
 
